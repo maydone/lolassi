@@ -39,10 +39,11 @@ class LLMTests(unittest.TestCase):
     def test_prompt_requests_exaggerated_humor_without_personal_attacks(self) -> None:
         self.assertIn("大乱斗选人阶段", SYSTEM_PROMPT)
         self.assertIn("最近十五局", SYSTEM_PROMPT)
-        self.assertIn("脱口秀式公开处刑", SYSTEM_PROMPT)
-        self.assertIn("最后半句必须再补一刀", SYSTEM_PROMPT)
-        self.assertIn("火力全开", SYSTEM_PROMPT)
-        self.assertIn("只能攻击操作、意识和近期战绩", SYSTEM_PROMPT)
+        self.assertIn("攻击性强、画面荒诞、带游戏梗", SYSTEM_PROMPT)
+        self.assertIn("结尾的反转或补刀", SYSTEM_PROMPT)
+        self.assertIn("使用最高嘲讽火力", SYSTEM_PROMPT)
+        self.assertIn("只能嘲讽操作、意识和近期战绩", SYSTEM_PROMPT)
+        self.assertIn("禁止歧视、威胁、脏话、人身攻击", SYSTEM_PROMPT)
 
     def test_accepts_complete_safe_json(self) -> None:
         response = MagicMock(status_code=200)
