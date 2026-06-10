@@ -1,0 +1,39 @@
+{
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "timeout_seconds": 12,
+  "history_games": 20,
+  "analysis_games": 15,
+  "team_wait_seconds": 4,
+  "allowed_queue_ids": [420, 430, 440, 450],
+  "minimum_game_seconds": 900,
+  "message_interval_seconds": 2.2,
+  "auto_send": true,
+  "max_comment_chars": 48,
+  "score_thresholds": {
+    "carry": 125,
+    "strong": 110,
+    "steady": 95,
+    "risky": 80
+  },
+  "forbidden_terms": [
+    "举报",
+    "去死",
+    "废物",
+    "垃圾",
+    "畜生",
+    "残疾",
+    "脑残",
+    "弱智",
+    "孤儿",
+    "妈",
+    "爹",
+    "全家",
+    "滚",
+    "操",
+    "草泥马",
+    "傻逼",
+    "sb",
+    "nmsl"
+  ]
+}
